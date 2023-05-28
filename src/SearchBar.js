@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Style.css";
+import "./App.css";
 
 const SearchBar = ({ str1, cb }) => {
   // Step 1: Creat a state

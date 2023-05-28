@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import ImageList from "./App3Components/ImageList";
-import SearchBar from "./App3Components/SearchBar";
+import ImageList from "./ImageList";
+import SearchBar from "./SearchBar";
 
 // Normal JS code can be written here
 
@@ -9,7 +9,7 @@ import SearchBar from "./App3Components/SearchBar";
 // Then we need to make that variable a 'state' and then update that state through function.
 // This will help React to understand that you would like to re-render the component.
 
-var App3 = () => {
+var App = () => {
   let myCar = "Honda";
 
   function callMe(searchTerm) {
@@ -31,4 +31,4 @@ var App3 = () => {
   );
 };
 
-export { App3 };
+export default App;

@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #003049;
+    /* background-color: #003049; */
 }
 .inputBox {
     height: 50px;

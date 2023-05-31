@@ -1,7 +1,8 @@
 import React from "react";
 import ImageShow from "./ImageShow";
 
-const ImageList = ({ images }) => {
+const ImageList = ({ imgList }) => {
+  console.log(imgList);
   return (
     <div>
       <ImageShow />
@@ -10,3 +11,9 @@ const ImageList = ({ images }) => {
 };
 
 export default ImageList;
+
+// we passed imgList suraTebis magivrad imitom rom tavidan andefaindi iyo da mere daibejda yvelafer
+// shemdegi stepi aris is rom amovigot suratebi
+// 
+     
+//create application 

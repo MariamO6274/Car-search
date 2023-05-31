@@ -22,7 +22,7 @@ const SearchBar = ({ str1, cb }) => {
       <h3 style={{ color: "white", marginBottom: "20px" }}>Search Term</h3>
       <div className="inputBox">
         <input
-          placeholder="Search..."
+          placeholder="Search cars..."
           value={searchTerm}
           onChange={handleChange}
         ></input>

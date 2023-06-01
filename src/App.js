@@ -4,20 +4,15 @@ import ImageList from "./ImageList";
 import SearchBar from "./SearchBar";
 import searchImages from "./api";
 
-// Normal JS code can be written here
-
-// If we want the component to re-render itself based on change in some variable (in this case: 'count').
-// Then we need to make that variable a 'state' and then update that state through function.
-// This will help React to understand that you would like to re-render the component.
 
 var App = () => {
-  let myCar = "Honda";
   const [images, setImages]=useState([])
 
 
   function callMe(searchTerm) {
     console.log("Call me function is called....");
-    console.log("Query param is : " + searchTerm);
+    console.log("Query param is: " + searchTerm);
+    
     searchImages().then((response) => {
       const imageData = response.data.results;
       console.log(imageData);
@@ -38,13 +33,13 @@ var App = () => {
 
   return (
     <>
-      <SearchBar str1={myCar} cb={callMe} />
+      <SearchBar cb={callMe} />
       <ImageList imgList={images} />
     </>
   );
 };
-//pass this data to image list/ rerender 
-//create new state, state variable and make images as state var and update it
+//pass this data to image list/ for rerendering 
+//create new state, state variable and make images as state variable and update it
 
 export default App;
 

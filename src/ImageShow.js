@@ -1,7 +1,12 @@
 import React from "react";
 
-const ImageShow = () => {
-  return <div>ImageShow</div>;
+const ImageShow = ({ imageDetails }) => {
+  console.log(imageDetails);
+  return (
+    <div>
+      <img src={imageDetails.urls.small} alt='Car photoes'></img>
+    </div>
+  );
 };
 
 export default ImageShow;

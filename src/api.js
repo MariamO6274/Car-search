@@ -16,5 +16,6 @@ const searchImages = async ()=> {
 export default searchImages;
 
 // axios.get('url', { headers: {}, params: {}})
+// we need ro provide access key in here -> Authorization: "Client-ID ....
 // api takes time to travel to server and get back resault, use await to wait for your reasult
 // await needs async..

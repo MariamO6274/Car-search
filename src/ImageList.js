@@ -3,11 +3,16 @@ import ImageShow from "./ImageShow";
 
 const ImageList = ({ imgList }) => {
   console.log(imgList);
-  return (
-    <div>
-      <ImageShow />
-    </div>
-  );
+
+const imageShowList = [];
+for (let i =0; i<imgList.length; i++){
+  imageShowList.push(<ImageShow imageDetails={imgList[i]} />);
+  //creating new ImageShow component evry time
+  console.log(imgList[i]);
+}
+console.log(imageShowList);
+ 
+  return <>{imageShowList}</>;
 };
 
 export default ImageList;
@@ -16,4 +21,5 @@ export default ImageList;
 // shemdegi stepi aris is rom amovigot suratebi
 // 
      
-//create application 
+// console.log(imgList[i]);  unique object
+// console.log("Details " + i, imgList[i])
